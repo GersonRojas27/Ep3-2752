@@ -1,10 +1,10 @@
 {
   "name": "ep3",
   "version": "1.0.0",
-  "description": "",
+  "description": "IntegracionDeAplicaciones-GersonRojas",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "node": "node app.js"
   },
   "keywords": [],
   "author": "",

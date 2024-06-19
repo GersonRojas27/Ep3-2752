@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/scripts.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Registro de Usuario</h2>
+    <form id="registerForm">
+      <input type="text" id="firstName" placeholder="Nombres" required><br>
+      <input type="text" id="lastName" placeholder="Apellidos" required><br>
+      <input type="email" id="email" placeholder="Correo Electrónico" required><br>
+      <input type="password" id="password" placeholder="Password" required><br>
+      <button type="submit">Registrar</button>
+    </form>
+    <div id="message"></div>
+    <p>¿Ya tienes una cuenta? <a href="/login">Login</a></p>
+  </div>
+</body>
+</html>

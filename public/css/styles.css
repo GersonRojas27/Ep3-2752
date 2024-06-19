@@ -1,0 +1,48 @@
+html {
+  --s: 137px; 
+  --c1: #00fffb;
+  --c2: #000000;
+  
+  --_g: var(--c1) 90deg, var(--c2) 0 135deg, #0000 0;
+  background:
+    conic-gradient(from -45deg at calc(100%/3) calc(100%/3), var(--c1) 90deg, #0000 0),
+    conic-gradient(from -135deg at calc(100%/3) calc(2*100%/3), var(--_g)),
+    conic-gradient(from 135deg at calc(2*100%/3) calc(2*100%/3), var(--_g)),
+    conic-gradient(from 45deg at calc(2*100%/3) calc(100%/3), var(--_g), var(--c1) 0 225deg, var(--c2) 0);
+  background-size: var(--s) var(--s);
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00fffb;
+  color: #000;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00cccc;
+}
